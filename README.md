@@ -1,29 +1,33 @@
 # Foculume
 
-Foculume is a simple Windows study timer built for focused work sessions. Set a study time, set a rest time, and let the app guide you through repeating study/rest cycles.
+Foculume is a local Windows study timer for focused work sessions. Set study and rest durations, run repeating cycles, take optional long breaks, and review your last 7 days of study statistics.
+
+Foculume is local-only. It has no accounts, no telemetry, no external services, and no installer.
 
 ## Features
 
-- Study and rest timer loop
-- Optional long break every N cycles
-- Cycle limit, or run until stopped
-- Persistent popup when each phase ends
-- Light mode and dark mode
+- Custom study, rest, and long-break durations
+- Optional long break every N study cycles
+- Optional cycle limit, or run until stopped
+- Persistent phase-finished popup
+- Optional auto-start of the next phase after a 7-second live countdown
+- Compact always-on-top timer mode with pause/resume and reset
+- Light and dark themes
 - Notification area/tray support
-- Daily statistics for the last 7 days
-- Tracks study time, rest time, paused time, transition time, and completed cycles
-- Saves settings automatically
-- Uses a single portable `.exe`
+- Opening Foculume again brings the existing window forward
+- Last 7 days of statistics
+- Tracks study time, rest time, paused time, transition time, total time, and completed study cycles
+- Settings and statistics saved automatically
 
 ## Download
 
-Download `Foculume.exe` from the latest release and run it.
+Download `Foculume.exe` from the latest GitHub release and run it.
 
 No installer is required.
 
 ## User Data
 
-Foculume stores user settings and statistics in:
+Foculume stores user data in:
 
 %APPDATA%\Foculume
 
@@ -33,13 +37,13 @@ This includes:
 - statistics.json
 - foculume.log
 
-Deleting the `.exe` removes the app, but your saved settings and statistics remain in `%APPDATA%\Foculume` unless you delete that folder manually.
+Deleting `Foculume.exe` removes the app, but saved settings and statistics remain in `%APPDATA%\Foculume` unless you delete that folder manually.
 
 ## Windows Security Notice
 
 Foculume is not code-signed, so Windows SmartScreen may show a warning the first time you run it.
 
-To open it, choose:
+If you trust the download source, choose:
 
 More info -> Run anyway
 
